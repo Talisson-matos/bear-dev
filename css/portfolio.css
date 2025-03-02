@@ -1,0 +1,22 @@
+.dev-port{
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dev-port img{
+    height: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info-dev{
+    text-align: center;
+    margin-top: 2rem;
+}
+.info-dev h2{
+    font-size: 3em;
+}

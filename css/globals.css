@@ -7,6 +7,11 @@
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 body{
     background: rgb(2, 14, 24);
     color: #ddd;
@@ -23,4 +28,14 @@ ul{
 
 button{
     cursor: pointer;
+}
+
+textarea{
+    resize: none;
+}
+
+@media(max-width:500px){
+    body{
+        font-size: 14px;
+    }
 }

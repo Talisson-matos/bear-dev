@@ -1,5 +1,6 @@
 .dev-port{
-    height: calc(100vh - 60px);
+    min-height: 600px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,12 +12,28 @@
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 0 20px 1px lightblue;
+    animation: jump 3s infinite ease-in-out;
 }
 
 .info-dev{
     text-align: center;
     margin-top: 2rem;
+    h4{
+        font-style: italic;
+    }
 }
 .info-dev h2{
     font-size: 3em;
+    text-shadow: 0 0 3px lightblue;
+}
+
+@keyframes jump{
+    0%,100%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(0px);
+
+    }
 }
